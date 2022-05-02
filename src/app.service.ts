@@ -25,6 +25,7 @@ export class AppService {
       .pipe(
         map((response) =>
           response.data.map((x) => {
+            console.log();
             return {
               name: x.name.common,
               population: x.population,
